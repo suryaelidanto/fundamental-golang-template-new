@@ -15,5 +15,4 @@ func UserRoutes(e *echo.Group) {
 	e.GET("/users", h.FindUsers)
 	e.GET("/user/:id", h.GetUser)
 	e.POST("/user", h.CreateUser)
-	e.PATCH("/user/:id", h.UpdateUser)
 }
